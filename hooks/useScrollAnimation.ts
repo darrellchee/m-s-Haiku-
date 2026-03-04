@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
  * Returns [ref, isVisible] where isVisible becomes true when element enters viewport.
  * Fires only once per element lifecycle.
  */
-export function useScrollAnimation(threshold = 0.15): [React.RefObject<HTMLDivElement>, boolean] {
+export function useScrollAnimation(threshold = 0.15): [React.RefObject<HTMLDivElement | null>, boolean] {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
