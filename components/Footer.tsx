@@ -1,7 +1,7 @@
 "use client";
 
 import { businessConfig } from "@/lib/config";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Footer() {
